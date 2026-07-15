@@ -1,4 +1,4 @@
-# 🎧 Wavelength — Sound & Mood Monitor
+#  Wavelength — Sound & Mood Monitor
 
 A Chrome extension that listens to whatever's playing in your browser tab, analyzes it in real time (frequency, loudness, energy), and journals how it tracks with your mood over time — with pattern insights pulled straight from your own listening data.
 
@@ -12,11 +12,11 @@ What you listen to — how loud, how often, at what hours — says more about yo
 
 ## Features
 
-- 🎚️ **Live frequency & loudness analysis** — real Web Audio FFT on captured tab audio, not simulated
-- 🔔 **Smart notifications** — only fires on *sustained* loud stretches or genuine energy shifts (rolling averages + cooldowns, not spam on every audio sample)
-- 📓 **Auto-journaling** — logs itself every few minutes while monitoring, no manual entry required
-- 🎵 **Song identification** — optional, via the AudD API, so entries get a real track name instead of "Tab Session #4"
-- 📊 **Pattern insights** — a journal that actually computes things:
+-  **Live frequency & loudness analysis** — real Web Audio FFT on captured tab audio, not simulated
+-  **Smart notifications** — only fires on *sustained* loud stretches or genuine energy shifts (rolling averages + cooldowns, not spam on every audio sample)
+-  **Auto-journaling** — logs itself every few minutes while monitoring, no manual entry required
+-  **Song identification** — optional, via the AudD API, so entries get a real track name instead of "Tab Session #4"
+-  **Pattern insights** — a journal that actually computes things:
   - Frequency-band breakdown (real audio-engineering ranges: sub-bass → brilliance)
   - Day × time-of-day energy heatmap
   - Calm/energy balance over the last 7 days, with a flag if you're not getting enough quiet time
