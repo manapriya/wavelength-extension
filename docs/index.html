@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Wavelength — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #332A1E; background: #FBF3E7; }
+  h1 { color: #332A1E; }
+  h2 { color: #332A1E; margin-top: 32px; font-size: 18px; }
+  a { color: #B8791C; }
+  .updated { color: #8A7F6E; font-size: 13px; }
+  code { background: #FFF3E0; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Wavelength — Privacy Policy</h1>
+  <p class="updated">Last updated: July 2026</p>
+
+  <p>Wavelength ("the extension") is a Chrome extension that analyzes the audio playing in your browser tab to show sound-level information and help you log how it relates to your mood over time. This page explains what data the extension accesses, what it does with it, and what it does not do.</p>
+
+  <h2>What the extension accesses</h2>
+  <p>With your explicit permission (granted via Chrome's tab-capture prompt each time you click "Start listening"), Wavelength captures the audio stream of your currently active browser tab. This audio is used only to compute:</p>
+  <ul>
+    <li>Dominant frequency (Hz) and relative loudness (dB, uncalibrated)</li>
+    <li>A derived "energy" and "calm" score</li>
+  </ul>
+  <p>This analysis happens locally in your browser, in real time. Raw audio is not saved, recorded, or transmitted anywhere as part of this analysis.</p>
+
+  <h2>Song identification (optional, off by default)</h2>
+  <p>If you choose to enable song identification and provide your own API key, Wavelength sends a short (~6 second) audio clip to <a href="https://audd.io" target="_blank">AudD</a>, a third-party audio-recognition service, to identify the track playing. This is the only case in which audio leaves your device, and only when you've explicitly enabled the feature and supplied your own key. AudD's handling of that data is governed by <a href="https://audd.io/privacy" target="_blank">AudD's own privacy policy</a>, not this one.</p>
+
+  <h2>What's stored, and where</h2>
+  <p>Journal entries (timestamps, computed scores, mood tags you log, identified track names) are stored using Chrome's local extension storage (<code>chrome.storage.local</code>) on your own device. This data is not synced to any server operated by the developer, and the developer has no access to it.</p>
+
+  <h2>What Wavelength does not do</h2>
+  <ul>
+    <li>Does not sell or share your data with advertisers or third parties</li>
+    <li>Does not transmit raw audio anywhere except the opt-in AudD song-ID feature described above</li>
+    <li>Does not track you across other websites or tabs beyond the one you actively start monitoring</li>
+  </ul>
+
+  <h2>Your control</h2>
+  <p>You can delete any journal entry from the Journal page at any time, disable notifications or song ID in Settings, or uninstall the extension entirely to remove all locally stored data.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the extension can be raised via <a href="https://github.com/manapriya/wavelength-extension/issues" target="_blank">GitHub Issues</a> on the project repository.</p>
+</body>
+</html>
