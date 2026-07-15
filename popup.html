@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="chassis">
+    <div class="screw tl"></div><div class="screw tr"></div>
+    <div class="screw bl"></div><div class="screw br"></div>
+
+    <div class="brand">
+      <span class="brand-name">WAVELENGTH</span>
+      <span class="brand-sub">what ur tab's giving rn 🎧</span>
+    </div>
+
+    <div class="dial-wrap">
+      <svg id="dial" viewBox="0 0 220 140" class="dial-svg">
+        <path id="arc-low" d="M20,120 A90,90 0 0,1 82,32" class="arc arc-calm"/>
+        <path id="arc-mid" d="M82,32 A90,90 0 0,1 138,32" class="arc arc-mid"/>
+        <path id="arc-high" d="M138,32 A90,90 0 0,1 200,120" class="arc arc-hot"/>
+        <g id="ticks"></g>
+        <line id="needle" x1="110" y1="120" x2="110" y2="40" class="needle"/>
+        <circle cx="110" cy="120" r="7" class="hub"/>
+      </svg>
+      <div class="dial-labels">
+        <span>chill</span><span>mid</span><span>unhinged</span>
+      </div>
+    </div>
+
+    <div class="readout-strip">
+      <div class="ro"><span class="ro-label">Hz</span><span id="ro-freq" class="ro-value">—</span></div>
+      <div class="ro"><span class="ro-label">dB</span><span id="ro-db" class="ro-value">—</span></div>
+      <div class="ro"><span class="ro-label">TRACK</span><span id="ro-track" class="ro-value ro-track">—</span></div>
+    </div>
+
+    <div id="interpret" class="interpret">hit start and i'll tell u what's going on 👀</div>
+    <div id="safety" class="safety hidden"></div>
+
+    <div class="controls">
+      <button id="toggleBtn" class="btn btn-primary">start listening</button>
+      <button id="journalBtn" class="btn btn-ghost">journal</button>
+    </div>
+    <button id="optionsBtn" class="link-btn">song id + settings</button>
+  </div>
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

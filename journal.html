@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Wavelength — Journal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="journal.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>WAVELENGTH <span>journal</span></h1>
+    <p class="sub">what ur tabs have been saying about u</p>
+  </header>
+
+  <main class="wrap">
+    <section class="vibe-card">
+      <h2>your vibe card ✨</h2>
+      <p class="vibe-sub">auto-generated from your actual listening data — not vibes, math</p>
+      <div class="badge-row" id="badges"></div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="panel" id="digest-panel">
+      <h2>the breakdown</h2>
+      <div id="digest"></div>
+    </section>
+
+    <section class="panel">
+      <h2>energy vs calm, over time</h2>
+      <canvas id="chart" width="900" height="260"></canvas>
+    </section>
+
+    <section class="panel">
+      <h2>your sound DNA</h2>
+      <p class="panel-sub">what frequency bands you actually spend your time in</p>
+      <div id="bands"></div>
+    </section>
+
+    <section class="panel">
+      <h2>when you're locked in</h2>
+      <p class="panel-sub">avg sound energy by day &amp; time block</p>
+      <div id="heatmap"></div>
+    </section>
+
+    <section class="panel">
+      <h2>balance check</h2>
+      <div id="balance"></div>
+    </section>
+
+    <section class="panel" id="insights-panel">
+      <h2>patterns noticed</h2>
+      <div id="insights"></div>
+    </section>
+
+    <section class="panel">
+      <h2>the log</h2>
+      <div id="log"></div>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="journal.js"></script>
+</body>
+</html>
